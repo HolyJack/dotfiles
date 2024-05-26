@@ -1,0 +1,17 @@
+
+addToPathFront() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH=$1:$PATH
+    fi
+}
+
+addToPathFront $HOME/.local/scripts
+
+# The next line activates vim motions for zsh
+# bindkey -v ^f "tmux-sessionizer\n"
+
+bindkey -s ^f "tmux-sessionizer\n"
+
+# The next line make vim alias for neovim
+alias vim=nvim
+export VISUAL="$EDITOR"
