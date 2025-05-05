@@ -15,3 +15,5 @@ bindkey -s ^f "tmux-sessionizer\n"
 # The next line make vim alias for neovim
 alias vim=nvim
 export VISUAL="$EDITOR"
+alias vim=nvim
+alias open="xdg-open &>/dev/null"

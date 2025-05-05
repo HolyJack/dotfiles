@@ -1,0 +1,30 @@
+# How the image is parse, in order to get the colors:
+# full - resized - wal - thumb -  fastresize - kmeans
+backend="kmeans"
+
+# What color space to use to produce and select the most prominent colors:
+# lab - labmixed - lch - lchmixed
+color_space = "labmixed"
+
+# Use the most prominent colors in a way that makes sense, a scheme color palette:
+# dark - dark16 - darkcomp - darkcomp16
+# light - light16 - lightcomp - lightcomp16
+# harddark - harddark16 - harddarkcomp - harddarkcomp16
+# <name> = { src = "<template-filename>", dst = "<destination-path>" }
+# softdark - softdark16 - softdarkcomp - softdarkcomp16
+# softlight - softlight16 - softlightcomp - softlightcomp16
+palette = "dark16"
+
+# Ensures a "readable contrast" (OPTIONAL, disabled by default)
+# Should only be enabled when you notice an unreadable contrast frequently happening
+# with your images. The reference color for the contrast is the background color.
+check_contrast = true
+
+# Templates duh
+# <name> = { src = "<template-filename>", dst = "<destination-path>" }
+[templates]
+waybar = { src = "waybar.css", dst = "~/.config/waybar/colors.css" }
+hypr = { src = "hyprland.conf", dst = "~/.config/hypr/colors.conf" }
+discord = { src = "discord.css", dst = "~/.config/vesktop/themes/colors.css" }
+neopywal = { src = "neopywal.vim", dst = "~/.cache/wal/colors-wal.vim" }
+rofi = { src = "rofi.rasi", dst = "~/.config/rofi/wallust/colors.rasi" }
