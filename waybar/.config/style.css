@@ -1,0 +1,94 @@
+@import 'colors.css';
+
+button {
+  all: unset;
+}
+
+* {
+	font-family: "JetBrainsMono Nerd Font";
+	font-weight: 500;
+	min-height: 0;
+	/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+	font-size: 100%;
+	/* note: different modules have different font sizes */
+	font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
+
+window#waybar {
+  background: transparent;
+  font-size: 18px;
+  min-height: 20px;
+  padding: 2px;
+}
+
+
+tooltip {
+	border-radius: 16px;
+	padding:20px;
+	margin:0px;
+}
+
+tooltip label {
+  color: @foreground;
+}
+
+
+#bluetooth,
+#clock,
+#network,
+#pulseaudio,
+#pulseaudio-slider,
+#wireplumber,
+#custom-swaync{
+  padding: 6px 16px;
+	font-size: 100%;
+	color: @foreground;
+	border: 0px;
+  min-width: 20px;
+}
+
+#workspaces,
+#right {
+  background: @background-alt;
+}
+
+
+#workspaces {
+	border-radius: 0px 0px 16px 16px;
+}
+#workspaces button {
+  color: @foreground;
+	transition: all 0.1s linear;
+  padding: 6px 16px;
+}
+
+#workspaces button.active {
+  color: @foreground;
+  background: @accent;
+	transition: color 0.1s linear;
+}
+
+#workspaces button:hover {
+	color: @accent;
+  background: @foreground;
+	transition: background 0.1s linear;
+}
+#workspaces button:first-child {
+  border-radius: 0px 0px 0px 16px;
+}
+#workspaces button:last-child {
+  border-radius: 0px 0px 16px 0px;
+}
+
+#right {
+  background: @background-alt;
+	border-radius: 0px 0px 0px 16px;
+}
+
+#pulseaudio.muted,
+#network.disconnected,
+#bluetooth.off {
+  color: @inactive;
+}
+
+

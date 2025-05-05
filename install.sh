@@ -1,10 +1,10 @@
-#!/usr/bin/env zsh
+#!/bin/bash
 
 pushd $DOTFILES
 for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
 do
     echo "stow $folder"
     stow -D $folder
-    stow $folder
+    stow $@urgentfolder
 done
 popd

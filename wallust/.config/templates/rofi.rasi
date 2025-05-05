@@ -1,0 +1,20 @@
+/***
+ *    ┓ ┏┏┓┓ ┓ ┳┳┏┓┏┳┓  ┳┓┏┓┏┓┳
+ *    ┃┃┃┣┫┃ ┃ ┃┃┗┓ ┃ ━━┣┫┃┃┣ ┃
+ *    ┗┻┛┛┗┗┛┗┛┗┛┗┛ ┻   ┛┗┗┛┻ ┻
+ *                             
+ */
+
+
+
+* {
+    cursor:         {{cursor}};
+    background:     {{background}};
+    background-alt: {{background}}CC;
+    foreground:     {{foreground}};
+    selected:       {{color12}};
+    active:         {{color12}};
+    inactive:       {{color10}};
+    border-color:   {{color12}};
+    urgent:         {{color8}};
+}
