@@ -16,8 +16,8 @@ if [[ -z $DOTFILES ]]; then
 fi
 
 if [[ -z $STOW_FOLDERS ]]; then
-    STOW_FOLDERS="bin,git,hyprland,kitty,nvim,rofi,wallust,waybar,zsh"
+    STOW_FOLDERS="bin,git,kitty,nvim,rofi,wallust,waybar,zsh"
 fi
 
 
-STOW_FOLDERS=$STOW_FOLDERS DOTFILES=$DOTFILES $DOTFILES/install
+STOW_FOLDERS=$STOW_FOLDERS DOTFILES=$DOTFILES $DOTFILES/install.sh
